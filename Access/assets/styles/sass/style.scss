@@ -4,67 +4,46 @@
     display:none;
 }
 
+
 #home {
     font-family: "DM Sans", sans-serif;
+    width:100vw;
+    margin:auto;
+    padding:auto;
     
-    &>header {
-        border-bottom:1px solid black;
-        margin-bottom:5vh;
-        
-        nav {
-            display:grid;
-            grid-template-columns:0.2fr 3fr 0.2fr;
-            height:8vh;
+        header {
+            height:10vh;
+            align-self:center;
+            justify-self:center;
             
-            figure {
-                align-self:center;
-                justify-self:center;
-            }
-            
-            ul {
-                align-self:center;
-                justify-self:center;
+            nav {
+                display:grid;
+                grid-template-columns: 1fr 2fr 1fr;
                 
-                li {
-                    display:inline-block;
-                    margin-left:5vw;
-                    text-transform:uppercase;
+                ul {
+                    
+                    li {
+                        display:inline-block;
+                        text-align:center;
+                        
+                    }
+                    
                 }
             }
-        }
-    }
-        
-        
-    &>main {
-        display: grid;
-        grid-template-columns: 1fr 0.2fr;
-        width:100vw;
-        margin:auto;
-        
-        ul {
             
-            li {
-                
-            }
-            
-            article {
-                
-            
-                #pics{
-                    display:grid;
-                    grid-template-columns:repeat(3,1fr);
-                }
-            }
         }
-        aside {
-        }
-    }
     
     
+        main {
+            width:100vw;
+            margin-left:auto;
+            margin-right:auto;
+            
+        }
         
         
-        
-    &>footer {
-        
-    }
+        footer {
+            
+            
+        }
 }
